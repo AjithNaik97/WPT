@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let vs Var vs Const</title>
+</head>
+
+<body>
+    <script>
+        var a = 12;
+        var a = "Ajith";
+        let b = 34;
+        // let b="Aji";
+
+        document.write("a : " + a + "<br>");
+        document.write("b : " + b + "<br>");
+
+        document.write("<hr>");
+
+        function f1() {
+            var a = 45;
+            document.write("a : " + a + "<br>");
+            if (a > 10) {
+                var x = 34;
+                let y = 45;
+                document.write("inside if ",x,"  ",y,"<br>");  
+            }
+            document.write("outside if ",x)
+        }
+
+        f1();
+
+
+
+
+    </script>
+</body>
+
+</html>

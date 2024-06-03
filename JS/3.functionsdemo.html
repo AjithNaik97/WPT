@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <script>
+        function f1(x,...arr) {
+            document.write("in f1 ", x, "<br>");
+            document.write("test: " + arr.length+ " "+arguments[0]+"<br>");
+        }
+
+        const f2 = function(x, y) {
+            document.write("in f2 ", x, y, "<br>");
+        }
+
+        const f3=(x,y=45,z=4) =>{
+            console.log(x,y,z);
+        }
+
+        f1(1,2,3,4)
+        f2(1,2)
+       f3(1,2,3,4)
+    </script>
+</body>
+
+</html>
