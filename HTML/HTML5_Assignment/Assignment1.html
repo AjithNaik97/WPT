@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>
+        Appointment Scheduler
+    </h1>
+</head>
+<body>
+    <div>
+        <form method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <text>Name</text><br>
+            <input type="text" name="name" id="nm">
+            <br>
+            <br>
+            <text>Telephone Number</text><br>
+            <input type="tel" name="tno" id="tno" patter="[0-9]{10}">
+            <br>
+            <br> 
+            <text>Email address</text><br>
+            <input type="email" name="email" id="email">
+            <br>
+            <br>   
+            <text>Date of birth</text><br>
+            <input type="date" name="dob" id="dob">
+            <br>
+            <br>  
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Appointment Request</legend>
+            <text>What is the reason for your visit?</text><br>
+            <input type="text" placeholder="State your reason" name="reason" id="reason">
+            <br>
+            <br> 
+            <text>Current pain level</text><br>
+            <input type="range" name="plevel" id="plevel" min="0" max="10">
+            <br>
+            <br>   
+            <text>Preffered Date</text><br>
+            <input type="date" name="doa" id="doa">
+            <br>
+            <br>
+            <text>Preferre Time</text><br>
+            <input type="time" name="toa" id="toa"  min="10:00" max="22:00">
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

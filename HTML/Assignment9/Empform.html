@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empform</title>
+    <h1 align="center">Employee Details</h1>
+</head>
+<body>
+    <style>
+    table,td{
+        border:3px solid grey;
+    }
+    td{
+        padding: 10px;
+    }
+    </style>
+    <div>
+        <form method="post">
+            <table align="center">
+                <tr>
+                    <td>1)</td>
+                    <td>Employee Id:</td>
+                    <td><input type="text" name="eid" id="eid"></td>
+                </tr>
+                <tr>
+                    <td>2)</td>
+                    <td>Employee Name:</td>
+                    <td><input type="text" name="ename" id="ename"></td>
+                </tr>
+                <tr>
+                    <td>3)</td>
+                    <td>Department Name:</td>
+                    <td>
+                        <select  id="dname">
+                            <option type="text" value="software">S/W</option>
+                            <option type="text" value="analytics">Analytics</option>
+                            <option type="text" value="hr">HR</option>
+                            <option type="text" value="testing">Testing</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4)</td>
+                    <td>Gender:</td>
+                    <td><input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                        <input type="radio" name="gender" id="fmale" value="fmale"><label for="fmale">Female</label></td>
+                </tr>
+                <tr>
+                    <td>5)</td>
+                    <td>Address:</td>
+                    <td><textarea name="addr" id="addr" cols="25" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>6)</td>
+                    <td>Skills:</td>
+                    <td><input type="checkbox" name="skill" id="c" value="c"><label for="c">C</label>
+                        <input type="checkbox" name="skill" id="c++" value="c++"><label for="c++">C++</label>
+                        <input type="checkbox" name="skill" id="java" value="java"><label for="java">Java</label>
+                        <input type="checkbox" name="skill" id=".net" value=".net"><label for=".net">.NET</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7)</td>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td>8)</td>
+                    <td>Birth Date:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="right"><button type="submit">Submit</button></td>
+                    <td><button type="reset">Clear</button> </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

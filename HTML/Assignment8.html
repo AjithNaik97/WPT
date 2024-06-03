@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1><u>Feedback form:</u></h1>
+    <h2>Gaurav, Harhsal, Kunal</h2>
+</head>
+<body>
+    
+    <div>
+    <text>Please fill out the form below to gather feedback on difficulties you have faced while purchasing items in a sports website.</text>
+    </div>
+    <br>
+    <div>
+    <form action="mailto: hr@iacsd.com"  method="post">
+        <table>
+            <tr>
+                <td>Type of the problem:</td>
+                <td>
+                    <input type="checkbox" name="problemt" id="technical" value="technical"><label for="technical">Technical</label><br>
+                    <input type="checkbox" name="problemt" id="pnotavail" value="pnotavail"><label for="pnotavail">Product not available</label><br>
+                    <input type="checkbox" name="problemt" id="missinfo" value="missinfo"><label for="missinfo">Missing information of the product</label>  
+                </td>
+            </tr>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="uname" id="uname" required><text style="color:red">*</text></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" id="email"  required><text style="color:red">*</text></td>
+            </tr>
+            <tr>
+                <td>Location:</td>
+                <td><input type="text" name="location" id="loc" required><text style="color:red">*</text></td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td><input type="tel" name="phone" id="ph" ></td>
+            </tr>
+            <tr>
+                <td>Description of problem:</td>
+                <td><textarea name="desc" id="des" cols="25" rows="5" required ></textarea><text style="color:red">*</text></td>
+            </tr>
+            <tr>
+                <td>Problem status: </td>
+                <td>
+                    <input type="radio" name="pstatus" id="yes" value="yes"><label for="yes">Solved</label>
+                    <input type="radio" name="pstatus" id="no" value="no"><label for="no">Un-solved</label><text style="color:red">*</text>
+                </td>
+            </tr>
+        </table>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
