@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+
+    <script>
+        function multiplication()
+        {
+            document.getElementById("mydiv").innerHTML=" ";
+            var nm=parseInt(document.getElementById("nm").value);
+            for(var i=1;i<=10;i++)
+            {
+                res=i*nm;
+                document.getElementById("mydiv").innerHTML+=nm+" * "+i+" = "+res+"<br>";
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <h4>Write a program to print the multiplication table of a given number up to 10 multiples. Eg for number 2,
+        output should be like</h4>
+
+        Number : <input type="text" name="number" id="nm">
+        <button type="button" id="btn" name="btn" onclick=multiplication()>Calculate</button> <br><br>
+        <div id="mydiv"></div>
+
+
+</body>
+</html>

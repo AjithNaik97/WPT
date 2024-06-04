@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <script>
+        function calculateops(){
+            document.getElementById("mydiv").innerHTML=" ";
+            
+            var n1=parseInt(document.getElementById("nm1").value);
+            var n2=parseInt(document.getElementById("nm2").value);
+            var rarr=document.getElementsByName("operation");
+            
+            for(i=0;i<rarr.length;i++)
+            {
+                if(rarr[i].checked)
+                    var c=rarr[i].value;
+            }
+            // document.getElementById("mydiv").innerHTML=c;
+            switch(c)
+            {
+                case "+":
+                    var res=n1+n2;
+                    document.getElementById("mydiv").innerHTML=res;
+                    break;
+                
+                case "-":
+                    var res=n1-n2;
+                    document.getElementById("mydiv").innerHTML=res;
+                    break;
+
+                case "*":
+                    var res=n1*n2;
+                    document.getElementById("mydiv").innerHTML=res;
+                    break;
+
+                case "/":
+                    var res=n1/n2;
+                    document.getElementById("mydiv").innerHTML=res;
+                    break;
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+    Number 1: <input type="text" name="number1" id="nm1"><br>
+    Number 2: <input type="text" name="number2" id="nm2"><br>
+    Operation: <input type="radio" name="operation" id="add" value="+">+
+                <input type="radio" name="operation" id="sub" value="-">-
+                <input type="radio" name="operation" id="multi" value="*">*
+                <input type="radio" name="operation" id="divi" value="/">/</body></br></br>
+    <button type="button" name="btn" id="btn" onclick=calculateops()>Calculate</button></br></br>
+    Result : <div id="mydiv"></div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest of three</title>
+    <!-- Write a program to accept three positive numbers and output the largest of them. -->
+
+    <script>
+        function calculatelargest(n1,n2,n3){
+            if(n1>n2)
+            {
+                if(n1>n3)
+                    document.getElementById("mydiv").innerHTML=n1+" is largest";
+                else
+                    document.getElementById("mydiv").innerHTML=n3+" is largest";
+            }
+            else
+            {
+                if(n2>n3)
+                    document.getElementById("mydiv").innerHTML=n2+" is largest";
+                else
+                    document.getElementById("mydiv").innerHTML=n3+" is largest";
+            }
+
+        }
+
+        function largest(){
+            document.getElementById("errnm1").innerHTML=" ";
+            document.getElementById("errnm2").innerHTML=" ";
+            document.getElementById("errnm3").innerHTML=" ";    
+            var nm1=parseInt(document.getElementById("n1").value);
+            var nm2=parseInt(document.getElementById("n2").value);
+            var nm3=parseInt(document.getElementById("n3").value);
+            var str="Please enter positive number!";
+            if(nm1>0)
+            {
+                if(nm2>0)
+                {
+                    if(nm3>0)
+                    {
+                        calculatelargest(nm1,nm2,nm3);
+                    }
+                    else
+                    {
+                        document.getElementById("errnm3").innerHTML=str;
+                    }
+                }
+                else{
+                    document.getElementById("errnm2").innerHTML=str;
+                }
+            }
+            else
+            {
+                document.getElementById("errnm1").innerHTML=str;
+            }
+        }
+    </script>
+
+
+
+</head>
+<body>
+    Number 1: <input type="text" id="n1" name="num1"><span id="errnm1"></span><br>
+    Number 2: <input type="text" id="n2" name="num2"><span id="errnm2"></span><br>
+    Number 3: <input type="text" id="n3" name="num3"><span id="errnm3"></span><br>
+    <button type="button" id="btn" name="btn" onclick=largest()>Calculate</button>
+    <div id="mydiv"></div>
+</body>
+</html>

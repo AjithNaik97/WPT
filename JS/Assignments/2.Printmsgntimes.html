@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Message</title>
+    <!-- Accept an integer value and a message from user and print the message that many number oftimes. -->
+
+    <script>
+        function print(){
+            document.getElementById("mydiv").innerHTML=" ";
+            var num=parseInt(document.getElementById("nm").value);
+            var str=document.getElementById("txt").value;
+            for(i=0;i<num;i++)
+            {
+                document.getElementById("mydiv").innerHTML+=str+"<br>";
+            }
+        }
+    </script>
+
+</head>
+<body>
+    Enter number: <input type="text" name="num" id="nm"><br>
+    Enter text: <input type="text" name="text" id="txt"><br>
+    <button type="button" name="btn" id="btn" onclick="print()">Print</button>
+    <div id="mydiv"></div>
+</body>
+</html>
