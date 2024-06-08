@@ -66,12 +66,15 @@
             $("#update").click(function(){
                 var pid=parseInt($('#pid').val());
                 var pname=$('#pname').val();
-                var pqty=$('#pty').val();
-
+                var qty=parseInt($('#qty').val());
+                var p={pid,pname,qty};
                 pos=arr.findIndex(ob=>ob.pid===pid);
                 if(pos!==-1){
-                    
+                    arr.splice(pos,1,p);
                 }
+                displayTable()
+                clearForm()
+                $('#pid').focus()
             })
 
 
